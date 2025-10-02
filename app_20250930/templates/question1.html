@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+<!-- この間に書かれたものは、別のhtmlにも引き継げる。 -->
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4"><br>
+        <center>
+            <img src="imagebox/q1.png" alt="ごめんね。読み込めなかったよ。" class="mw-100">
+            <!-- height="550"がちょうど良いかも。 -->
+        </center>
+    </div>
+    <div class="col-md-4"><br>
+        <form action='' method="POST">
+            <br>
+            <center>
+                <!-- <h1 class="delisply-1">クイズの時間</h1> -->
+                <h3>以下に書いてみよう！</h3>
+                <form method="POST" enctype=multipart/form-data>
+                    <div class="form-outline">
+                        <textarea name="python" id="" cols="50" rows="20" class="mw-100"></textarea>
+                        <!-- <input type="text" id="formControlLg" class="form-control form-control-lg" name="python" /> -->
+                    </div>
+
+                    <button type="submit" class="btn btn-info">実行</button>
+
+                </form>
+            </center>
+            <!-- <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4" name="body"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div>
+
+            <div class="form-outline">
+                <input type="text" id="textAreaExample" name="bod"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div> -->
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="container mw-100">
+            <br>
+            <h2 style="text-align:center">pythonのルール <br>（このページでの指示）</h2><br>
+            ここでは文字を表示させるプログラムを紹介します。 <br>
+            <br>
+            print("Hello World!")<br>
+            を、まずは真ん中の記述スペースに真似して書いてみましょう！<br><br>
+            ※HelloとWorldの間は半角スペースが１つ入力されています。<br>
+            <br>
+            書き終わったら、下の実行ボタンを押してみましょう。<br>
+            <br>
+            <h4 style="text-align:center; color: rgb(255, 255, 255); background-color:rgb(0, 0, 0);">ここに注意!!</h4>
+            基本的に<strong>半角英数</strong>で入力していきます。<br>
+            「ｐｒいｎｔ」このような状態（全角英数）になったら、<b>CapsLock/英数</b>と書かれたボタンを押しましょう。<br>
+
+            <br>
+            printしたい文章の最初と最後に""を付ける必要があります。 <br>
+            「"」は shift を長押ししながら、 2 を押すことで入力できます。 <br>
+            <br>
+            これが無いと「文字列」として認識されません…… <br>
+            <br>
+            <br>
+            ほんの少し間違っているだけでも、<u>文字すら表示できない</u>というわけです……<br>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<h1>もう一度挑戦してみよう！</h1>
+<br>
+<h4>表示したいものと少し違うかも。</h4>
+
+<div class="row">
+    <div class="col-md-6"><br>
+            <b>正解の出力結果</b>
+            <br>
+            <textarea class="form-control text-left w-75" name="" id="" cols="30" rows="15">あいうえお
+8 （←数値での出力）
+            </textarea>
+            <!-- textarea内にVSコードのインデントが直接反映されてしまうため、歪なコードになっています。ご了承ください。 -->
+    </div>
+    <div class="col-md-6"><br>
+            <b>あなたの出力結果</b>
+            <br>
+            <textarea class="form-control text-left w-75" name="" id="" cols="30" rows="15">あいうえお
+8  （←文字列での出力）
+            </textarea>
+    </div>
+</div>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<b><u>ヒント</u></b><br>
+右側の説明をもう一度読み返してみよう。<br>
+<br>
+<br>
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button>
+<br>
+
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+</center>
+{% endblock %}

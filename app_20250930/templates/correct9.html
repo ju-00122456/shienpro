@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+
+<h1>正解！</h1>
+<p>以下のように表示されるよ。</p>
+
+<textarea name="" id="" cols="30" rows="10">
+yの方が大きいよ
+</textarea>
+<br>
+
+<form action="/question10" method="GET">
+    <input type="submit" value="第10問へ">
+</form>
+<br>
+<br>
+<input type="button" onclick="location.href='/'" value="疲れたからトップへ。">
+<br>
+
+
+
+</center>
+{% endblock %}

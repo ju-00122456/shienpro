@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<br>
+<h1>エラーが起きてしまった。</h1>
+<h1>もう一度挑戦してみよう！</h1>
+<br>
+<h4>何かが原因でエラーが起きました。</h4>
+<br>
+<u>右側に書いてある注意事項をよく読んでみましょう。</u>
+<br><br>
+<p>もしかすると…………</p>
+・"" に注意したかな？<br>
+・スペルは合っているかな？<br>
+・全て半角で打たれているかな？
+<br><br>
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button>
+<br>
+
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+</center>
+{% endblock %}

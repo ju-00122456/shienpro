@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4"><br>
+        <center>
+            <img src="imagebox/q3.png" alt="ごめんね。読み込めなかったよ。" class="mw-100">
+        </center>
+    </div>
+    <div class="col-md-4"><br>
+
+        <form action='' method="POST">
+            <br>
+            <center>
+                <h3>ここに書いてみよう！</h3>
+                <form method="POST" enctype=multipart/form-data>
+                    <div class="form-outline">
+                        <textarea name="python" id="" cols="50" rows="20" class="mw-100"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-info">実行</button>
+
+                </form>
+            </center>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <h2 style="text-align:center">pythonのルール <br>（このページでの指示）</h2><br>
+            前問では、足し算(+)を例として、計算結果を表示させるプログラムを紹介しました。 <br>
+            <br>
+            今回は引き算、掛け算、割り算で表示してみましょう。<br>
+            差は - 、積は * 、商は / 、あまりは % で計算できます。<br>
+            以下の条件に当てはめて記述してみましょう。<br>
+            <br>
+            <li>7-3をprintで表示。</li>
+            <li>2×6の計算結果をprintで表示。</li>
+            <li>24÷3の商をprintで表示。</li>
+            <li>12÷5のあまりをprintで表示。</li><br>
+            ※全て記号を用いてprintしてみよう！<br>
+            <br>
+            <br>
+            書き終わったら、下の実行ボタンを押してみましょう。
+            <br>
+            <h4 style="text-align:center; color: rgb(255, 255, 255); background-color:rgb(0, 0, 0);">ここに注意!!</h4>
+            <li><b>全て半角で入力</b>しないと、<b>「数値」</b>として認識されません……</li>
+            <li><b>””をつけてしまうと文字列として認識されてしまう</b>ことにも注意しましょう。</li>
+            <br>
+            <li>上の条件は文字列と数値のどちらで表示できれば良いでしょうか？</li>
+        </div>
+    </div>
+</div>
+
+
+<!-- <iframe src="https://scratch.mit.edu/projects/866059006/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
+
+
+
+{% endblock %}

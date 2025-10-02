@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+
+<h1>エラーが起きてしまった。</h1>
+<p>以下のようなエラーが表示されるよ。</p>
+
+<textarea name="" id="" cols="30" rows="10">
+File "/Users/user/Download/A.py"
+    print(Hello World)
+          ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+</textarea>
+<br><br>
+<b><u>ヒント</u></b><br>
+""が付いていないかも……<br>
+Hello World!の両側に"をつけてプログラミングしてみよう。<br><br><br>
+
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button><br>
+<br>
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+
+
+</center>
+{% endblock %}

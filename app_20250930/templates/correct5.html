@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+
+<h1>正解！</h1>
+<p>以下のように表示されるよ。</p>
+
+<textarea name="" id="" cols="30" rows="10">
+15
+python勉強中
+</textarea>
+<br>
+頑張ったね！<br>
+だんだん難しくなってきましたね。<br>
+次の内容は少し複雑です。<br>
+<br>
+上手くいかなかったら、途中で休憩も挟んでみてください！<br>
+<br>
+<br>
+<form action="/question6" method="GET">
+    <input type="submit" value="第６問へ">
+</form>
+<br>
+<br>
+<input type="button" onclick="location.href='/'" value="疲れたからトップへ。">
+<br>
+
+
+
+
+</center>
+{% endblock %}

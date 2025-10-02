@@ -1,0 +1,15 @@
+.test{
+    font-size: 30px;
+    border-bottom: solid 5px #87CEFA;
+    font-style: italic;
+}
+/* 書き方わからないし、なんか動かないから後回しで。 */
+/* cssが参照できていないのか、反映されない。 */
+
+
+/* 画面幅の50%の幅で画像を表示 */
+img{
+    max-width:25%;
+    height:auto;
+}
+

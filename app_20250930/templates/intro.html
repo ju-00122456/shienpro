@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+    <center>
+    <br>
+    <h1>Pythonの世界へようこそ!</h1>
+    <br>
+    <p>このアプリではプログラミング言語の一つであるPythonについて学んでいきます。</p>
+    <p>このアプリ内で基礎的な内容を順番にこなしていき、<br>
+        Pythonがどのようなものかを理解している状態になれば目標達成です！</p>
+    
+    <img src="imagebox/q0.png" class="img-fluid w-75" alt="ごめんね。読み込めなかったよ。">
+    <!-- height="550"がちょうど良いかも。 -->
+        
+
+    <br>
+        問題１〜１０まで上のような画面が出てきます。<br>
+        初めは順番に行い、慣れてきたら自分なりのやり方で行いましょう。<br>
+        <br>
+        <p>これから１つ１つ順を追って学んでいきましょう。</p>
+        <br>
+        <p>↓↓↓↓↓↓準備ができたら 第１問 から始めましょう。↓↓↓↓↓↓</p>
+        <a href="{{ url_for('question1') }}"><button>第１問へ</button></a><br>
+
+    <br>
+    <!-- <h2>
+        <font color="red">※試作段階です。全10問になっています。</font>
+    </h2> -->
+
+
+    </center>
+</body>
+
+
+{% endblock %}

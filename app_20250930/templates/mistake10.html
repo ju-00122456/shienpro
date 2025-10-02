@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<br>
+<h1>一度、確認してみよう！</h1>
+<br>
+<h3>自分が書いたものと見比べてどこが違うか確認してみよう。</h3>
+
+<div class="row">
+    <div class="col-md-6"><br>
+            <b>解答例</b>
+            <br>
+            <textarea class="form-control text-left w-75" name="" id="" cols="30" rows="15">x=10
+y=20
+
+if x>y:
+    print("xの方が大きいよ")
+elif x<y:
+    print("yの方が大きいよ")
+else:
+    print("xとyは同じだよ")</textarea>
+            <!-- textarea内にVSコードのインデントが直接反映されてしまうため、歪なコードになっています。ご了承ください。 -->
+    </div>
+    <div class="col-md-6"><br>
+            <b>あなたの解答</b>
+            <br>
+            <textarea class="form-control text-left w-75" name="" id="" cols="30" rows="15">{{ answer }}</textarea>
+    </div>
+</div>
+<br>
+
+
+<div class="row">
+    <div class="col-md-5">
+    </div>
+    <div class="col-md-7" style="text-align: left;">
+        <li>忘れている記号はないかな？</li>
+        <li>半角小文字で書かれているかな？</li>
+        <li>if,elif,else文を間違えていないかな？</li>
+    </div>
+</div>
+<br>
+
+<form action="/question10" method="GET">
+    <input type="submit" value="同じ問題に再挑戦！">
+</form>
+<br>
+
+<form action="/zatu" method="GET">
+    <input type="submit" value="次のページへ">
+</form>
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+
+
+
+</center>
+{% endblock %}

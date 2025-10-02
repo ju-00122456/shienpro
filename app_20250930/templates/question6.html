@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+<!-- この間に書かれたものは、別のhtmlにも引き継げる。 -->
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4"><br>
+        <center>
+            <img src="imagebox/q6.png" alt="ごめんね。読み込めなかったよ。" class="mw-100">
+            <!-- height="550"がちょうど良いかも。 -->
+        </center>
+    </div>
+    <div class="col-md-4"><br>
+        <form action='' method="POST">
+            <br>
+            <center>
+                <h3>以下に書いてみよう！</h3>
+                <form method="POST" enctype=multipart/form-data>
+                    <div class="form-outline">
+                        <textarea name="python" id="" cols="50" rows="20" class="mw-100"></textarea>
+                        <!-- <input type="text" id="formControlLg" class="form-control form-control-lg" name="python" /> -->
+                    </div>
+                    <button type="submit" class="btn btn-info">実行</button>
+                </form>
+            </center>
+            <!-- <h1 class="delisply-1">クイズの時間</h1> -->
+
+
+            <!-- <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4" name="body"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div>
+
+            <div class="form-outline">
+                <input type="text" id="textAreaExample" name="bod"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div> -->
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <br>
+            <h2 style="text-align:center">pythonのルール <br>（このページでの指示）</h2><br>
+            先ほどは、変数名を自分で決めて、数値や文字列の計算を行いました。<br>
+            今度は変数を上書きしてみましょう。<br><br>
+            プログラミングは<u>上に記述してあるものから順に</u>処理をしていきます。<br>
+            この特徴を用いると、変数を<b>上書き</b>することができます。<br>
+            まずは、以下のように記述してみましょう。<br><br>
+
+            <table style="border:none;">
+                <tbody style="border:none;">
+                    <tr style="border:none;">
+                        <td style="border:none;" width="150">
+                            A = 10<br>
+                            print(A)<br>
+                            A = 20<br>
+                            print(A)<br>
+                            <br>
+                            B = 7<br>
+                            B = B - 2<br>
+                            print(B)<br>
+                        </td>
+                        <td style="border:none;"></td>
+                        <td style="border:none;">
+                            <img src="imagebox/A.gif" alt="ごめんね。読み込めなかったよ。" height="200">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <h4 style="text-align:center; color: rgb(255, 255, 255); background-color:rgb(0, 0, 0);">ここに注意!!</h4>
+            <br>
+            <li>プログラミングでの = は左右が等しいという意味ではなく、<b>左辺に右辺を代入する</b>という意味です。</li>
+            <li>変数を<b>途中で上書き</b>したことによって、出力結果が変わっています。</li>
+            <li>足し算だけでなく、その他の計算でも成り立ちます。</li>
+
+            <br>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

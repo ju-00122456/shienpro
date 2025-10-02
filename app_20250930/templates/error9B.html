@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+
+<h1>エラーが起きてしまった。</h1>
+<p>以下のようなエラーが表示されるよ。</p>
+
+<textarea name="" id="" cols="50" rows="10">
+File "/Users/user/Download/A.py"
+  if x > y
+            ^
+  else
+        ^
+SyntaxError: expected ':'</textarea>
+<br><br>
+<b><u>ヒント</u></b><br>
+何か足りないものがありそう。
+<li>if文の形をもう一度確認してみよう。</li>
+<br>
+
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button><br>
+<br>
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+
+
+</center>
+{% endblock %}

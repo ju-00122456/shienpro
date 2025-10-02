@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+
+<h1>エラーが起きてしまった。</h1>
+<p>以下のようなエラーが表示されるよ。</p>
+
+<textarea name="" id="" cols="50" rows="10">Traceback (most recent call last):
+File "/Users/user/Download/A.py", in <module>
+       int(price)
+  ~~~~^~~~~
+TypeError: can only concatenate str (not "int") to str</textarea>
+<br><br>
+<b><u>ヒント</u></b><br>
+<li>intとstrについて、もう一度確認してみよう。</li>
+<br><br><br>
+
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button><br>
+<br>
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+
+
+</center>
+{% endblock %}

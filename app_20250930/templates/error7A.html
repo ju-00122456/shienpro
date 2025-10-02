@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<h1>出力結果は合ってるけど、もう一度挑戦しよう！</h1>
+<br>
+<h4>表示するまでが少し違うかも。</h4>
+
+
+<div class="row">
+    <div class="col-md-6"><br>
+            <b>解答のヒント</b>
+            <br>
+            <textarea class="form-control text-left w-75" name="" id="" cols="30" rows="15">price=150
+print("ジュースは"+str(price)+"円")
+kosuu=6　　←文字列型を代入してみよう。
+print(price*kosuu)</textarea>
+            <!-- textarea内にVSコードのインデントが直接反映されてしまうため、歪なコードになっています。ご了承ください。 -->
+    </div>
+    <div class="col-md-6"><br>
+            <b>出力結果</b>
+            <br>
+            <textarea class="form-control text-left w-75" name="" id="" cols="30" rows="15">ジュースは150円
+900</textarea>
+    </div>
+</div>
+
+<b><u>ヒント</u></b><br>
+kosuu変数に文字列型の 6 を代入して、int,を使ってみよう。<br>
+<br>
+<br>
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button>
+<br>
+
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+</center>
+{% endblock %}

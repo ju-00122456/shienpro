@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+<!-- この間に書かれたものは、別のhtmlにも引き継げる。 -->
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4"><br>
+        <center>
+            <img src="imagebox/q8.png" alt="ごめんね。読み込めなかったよ。" class="mw-100">
+            <!-- height="550"がちょうど良いかも。 -->
+        </center>
+    </div>
+    <div class="col-md-4"><br>
+        <form action='' method="POST">
+            <br>
+            <center>
+                <!-- <h1 class="delisply-1">クイズの時間</h1> -->
+                <h3>以下に書いてみよう！</h3>
+                <form method="POST" enctype=multipart/form-data>
+                    <div class="form-outline">
+                        <textarea name="python" id="" cols="50" rows="20" class="mw-100"></textarea>
+                        <!-- <input type="text" id="formControlLg" class="form-control form-control-lg" name="python" /> -->
+                    </div>
+
+                    <button type="submit" class="btn btn-info">実行</button>
+
+                </form>
+            </center>
+
+            <!-- <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4" name="body"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div>
+
+            <div class="form-outline">
+                <input type="text" id="textAreaExample" name="bod"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div> -->
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <br>
+            <h2 style="text-align:center">pythonのルール <br>（このページでの指示）</h2><br>
+            プログラミングには<b>順次</b>、<b>分岐</b>、<b>反復</b>の３つの条件があります。<br>
+            これまでは、<b>順次</b>について学習してきました。<br>
+            これからは、<b>分岐</b>について学習しましょう。<br><br>
+
+            分岐とは、ある条件が<u>満たされているとき</u>と<u>満たされていないとき</u>に、違う動きをさせることができるものです。<br>
+            わかりやすく表すと、「もし〜ならば、〜する」という形です。<br>
+            分岐をさせる場合は、<b>if文</b>を使います。<br>
+            <u>まず、以下のように記述してみましょう。</u><br><br>
+            x = 40<br>
+            if x > 20:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("xは20より大きいよ")<br><br>
+            
+            y = 10<br>
+            z = 50<br>
+            if y > z:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("yの方が大きいよ")
+
+
+
+
+            <!-- <center>
+                <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vT6rkQL_W1bhkaLFmUuL0Vj1UuIi09G-w7oDikwUYZKvS9nTRH3rX-JZ7_RK9r7Cpc-at_UA774pfIK/embed?start=true&loop=true&delayms=2000"
+                    frameborder="0" width="430" height="300" allowfullscreen="true" mozallowfullscreen="true"
+                    webkitallowfullscreen="true"></iframe>
+            </center> -->
+
+            <br>
+            <h4 style="text-align:center; color: rgb(255, 255, 255); background-color:rgb(0, 0, 0);">ここに注意!!</h4>
+            <li>if文のすぐ後の文章は、<span style="font-size: larger;"><b>半角スペースが４つ必要</b></span>です。</li>
+            <li><span style="font-size: larger;"><b>:のつけ忘れ</b></span>に注意してください！</li>
+            <li>ifの条件に合っていない場合は、指示が無視されます。</li>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

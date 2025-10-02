@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+<!-- この間に書かれたものは、別のhtmlにも引き継げる。 -->
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4"><br>
+        <center>
+            <img src="imagebox/q10.png" alt="ごめんね。読み込めなかったよ。" class="mw-100">
+            <!-- height="550"がちょうど良いかも。 -->
+        </center>
+    </div>
+    <div class="col-md-4"><br>
+        <form action='' method="POST">
+            <br>
+            <center>
+                <!-- <h1 class="delisply-1">クイズの時間</h1> -->
+                <h3>以下に書いてみよう！</h3>
+                <form method="POST" enctype=multipart/form-data>
+                    <div class="form-outline">
+                        <textarea name="python" id="" cols="50" rows="20" class="mw-100"></textarea>
+                        <!-- <input type="text" id="formControlLg" class="form-control form-control-lg" name="python" /> -->
+                    </div>
+
+                    <button type="submit" class="btn btn-info">実行</button>
+
+                </form>
+            </center>
+
+            <!-- <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4" name="body"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div>
+
+            <div class="form-outline">
+                <input type="text" id="textAreaExample" name="bod"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div> -->
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <br>
+            <h2 style="text-align:center">pythonのルール <br>（このページでの指示）</h2><br>
+            今度は、<b>elif</b>を使って、分岐を複数個作ってみましょう。<br>
+            <b>elif</b>は「ifをたくさん使いたい」という時に使います。<br><br>
+            ↓下の例のように、<b>書き方はif文と同じです。</b><br>
+            elif x=10:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("xは10です。")<br><br>
+            
+            以下の条件に合うように、記述してみましょう。<br>
+            <li>変数xに10を、変数yに20を入れる。</li>
+            <li>もしxがyより大きいなら、「xの方が大きいよ」と出力。</li>
+            <li>もしxがyより小さいなら、「yの方が大きいよ」と出力。</li>
+            <li>もしxとyが等しいなら、「xとyは同じだよ」と出力。</li><br>
+
+            書き終わったら、下の実行ボタンを押してみましょう。<br>
+            <br>
+            <h4 style="text-align:center; color: rgb(255, 255, 255); background-color:rgb(0, 0, 0);">ここに注意!!</h4>
+            <li>elseとelifは別物です</li>
+            <li>if、elif、elseの順番で書きましょう</li>
+            <li>「より大きい」は > を使いましょう。</li>
+            <br>
+            <li>if文のすぐ後の文章は、<b>半角スペースが４つ必要</b>です。</li>
+            <li><b>:のつけ忘れ</b>に注意してください！</li>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

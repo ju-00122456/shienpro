@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+<!-- この間に書かれたものは、別のhtmlにも引き継げる。 -->
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4"><br>
+        <center>
+            <img src="imagebox/q9.png" alt="ごめんね。読み込めなかったよ。" class="mw-100">
+            <!-- height="550"がちょうど良いかも。 -->
+        </center>
+    </div>
+    <div class="col-md-4"><br>
+        <form action='' method="POST">
+            <br>
+            <center>
+                <!-- <h1 class="delisply-1">クイズの時間</h1> -->
+                <h3>以下に書いてみよう！</h3>
+                <form method="POST" enctype=multipart/form-data>
+                    <div class="form-outline">
+                        <textarea name="python" id="" cols="50" rows="20" class="mw-100"></textarea>
+                        <!-- <input type="text" id="formControlLg" class="form-control form-control-lg" name="python" /> -->
+                    </div>
+
+                    <button type="submit" class="btn btn-info">実行</button>
+
+                </form>
+            </center>
+
+            <!-- <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4" name="body"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div>
+
+            <div class="form-outline">
+                <input type="text" id="textAreaExample" name="bod"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div> -->
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <br>
+            <h2 style="text-align:center">pythonのルール <br>（このページでの指示）</h2><br>
+            今度は、<b>else</b>を使って、分岐を１つ追加してみましょう。<br>
+            簡単に表すと、「〜でないならば、〜をする。」という形です。<br>
+            以下のように記述してみましょう。<br><br>
+            x = 10<br>            
+            y = 40<br>
+
+            if x > y:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("xの方が大きいよ")<br>
+
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("yの方が大きいよ")<br><br>
+
+            書き終わったら、下の実行ボタンを押してみましょう。<br>
+
+
+            <br>
+            <h4 style="text-align:center; color: rgb(255, 255, 255); background-color:rgb(0, 0, 0);">ここに注意!!</h4>
+            <li>ifと違い、elseの後には<u>何も書きません。</u></li>
+            <li>elseはif以外の条件全てが条件です。</li><br>
+            <li>if文のすぐ後の文章は、<span style="font-size: large;"><b>半角スペースが４つ必要</b></span>です。</li>
+            <li><span style="font-size: large;"><b>:のつけ忘れ</b></span>に注意してください！</li>
+
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

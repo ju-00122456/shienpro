@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+<!-- この間に書かれたものは、別のhtmlにも引き継げる。 -->
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4"><br>
+        <center>
+            <img src="imagebox/q7.png" alt="ごめんね。読み込めなかったよ。" class="mw-100">
+            <!-- height="550"がちょうど良いかも。 -->
+        </center>
+    </div>
+    <div class="col-md-4"><br>
+        <form action='' method="POST">
+            <br>
+            <center>
+                <!-- <h1 class="delisply-1">クイズの時間</h1> -->
+                <h3>以下に書いてみよう！</h3>
+                <form method="POST" enctype=multipart/form-data>
+                    <div class="form-outline">
+                        <textarea name="python" id="" cols="50" rows="20" class="mw-100"></textarea>
+                        <!-- <input type="text" id="formControlLg" class="form-control form-control-lg" name="python" /> -->
+                    </div>
+
+                    <button type="submit" class="btn btn-info">実行</button>
+
+                </form>
+            </center>
+
+            <!-- <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4" name="body"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div>
+
+            <div class="form-outline">
+                <input type="text" id="textAreaExample" name="bod"></textarea>
+                <label class="form-label" for="textAreaExample">内容を書いてね</label>
+            </div> -->
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <br>
+            <h2 style="text-align:center">pythonのルール <br>（このページでの指示）</h2>
+            これまで、文字列や数値を使ってプログラムを組んできました。今回は、これらをさらに詳しく学んでいきます。<br>
+            <br>
+            'あいうえお' などの文字列は<b>文字列型</b>、3 などの数値は<b>数値型</b>と呼びます。<br>
+            5問目では、文字列+文字列、数値+数値を学んできましたが、以下の画像のように、<u>文字列型と数値型は計算することができません。</u>
+            <br>
+            <center>
+                <img src="imagebox/q7_setumei.png" alt="ごめんね。読み込めなかったよ。" height="130" class="mw-100">
+            </center>
+            数値型 → 文字列型 は<b>str</b>、文字列型 → 数値型 は<b>int</b>を使います。<br>
+            これを<u>型変換</u>と言います。<br>
+            以下の条件に沿うように、記述してみましょう。<br>
+            <br>
+            <li>priceという変数に<b>数値型</b>の 150 を代入</li>
+            <li>price変数を使って、「ジュースは150円」と表示</li>
+            <li>kosuu変数に<b>文字列型</b>の 6 を代入</li>
+            <li>price変数とkosuu変数を使って、合計額を数値で表示</li>
+            <h4 style="text-align:center; color: rgb(255, 255, 255); background-color:rgb(0, 0, 0);">ここに注意!!</h4>
+            <li>異なる型を一緒に使うことができないのは、同じ文章の中に書く時です。</li>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

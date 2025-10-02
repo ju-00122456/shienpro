@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+
+<h1>エラーは起きていないけど…………</h1>
+<p>意図とは違う出力になるかも。</p>
+
+<textarea name="" id="" cols="30" rows="10">7
+12
+9+3</textarea>
+<br><br>
+<b><u>ヒント</u></b><br>
+文字列なのか数値なのか、もう一度考えてみよう。<br>
+（""で囲むのは「文字列型」、""で囲まないのは「数値型」だよ。）
+<br><br><br>
+
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button><br>
+<br>
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+
+
+</center>
+{% endblock %}

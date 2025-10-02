@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+
+<h1>エラーは起きていないけど…………</h1>
+<p>意図とは違う出力になるかも。</p>
+
+<textarea name="" id="" cols="50" rows="10">
+具体的には……
+
+xが10、yが20で
+「yの方が大きいよ」と表示したいけど、
+
+このままだと、
+「xの方が大きいよ」とか、「xとyは同じだよ」と
+表示されちゃうよ。</textarea>
+<br><br>
+<b><u>ヒント</u></b><br>
+何か足りないものがありそう。
+<li>比較演算子が違うかも。</li>
+<br>
+
+<button type="button" onclick="window.history.back();">もう一度挑戦する！</button><br>
+<br>
+<br>
+<input type="button" onclick="location.href='/'" value="一番最初のページへ戻る">
+<br>
+
+
+
+</center>
+{% endblock %}
